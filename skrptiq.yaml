@@ -1,0 +1,45 @@
+# --- Identity ---
+id: "069d2091-1da3-45cd-9938-f781bd8655d4"
+name: "jira-ticket-triage"
+display_name: "Jira Ticket Triage"
+description: "Pulls Jira tickets via MCP, categorises by status and priority, and generates a triage report or sprint summary"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/jira-ticket-triage"
+
+# --- Discovery (Hub) ---
+category: "project-manager"
+tags:
+  - "mcp"
+  - "jira"
+  - "triage"
+  - "reporting"
+  - "agile"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "llm-service"
+    - "jira-mcp"
+  permissions:
+    - "network:atlassian.net"
+    - "network:id.atlassian.com"
+  data_handling: []
+
+# --- Contents ---
+contents:
+  skills: 5
+  prompts: 5
+  workflows: 1
+  services: 2
+  sources: 0
+  documents: 0
+  assets: 0
+  total: 13
