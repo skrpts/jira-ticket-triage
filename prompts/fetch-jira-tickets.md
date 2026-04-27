@@ -4,6 +4,19 @@ id: fetch-jira-tickets
 title: Fetch Jira Tickets
 description: "Retrieves and structures Jira tickets via MCP using JQL"
 tags: [Production, Project Management]
+inputs:
+  jql:
+    label: "JQL Query"
+    description: "Jira Query Language filter. Leave empty to use project + open sprints."
+    example: "project = ENG AND sprint in openSprints() ORDER BY priority DESC"
+    required: false
+    type: text
+  project:
+    label: "Project Key"
+    description: "Jira project key. Used if no JQL query is provided."
+    example: "ENG"
+    required: false
+    type: text
 connections:
   - target: ticket-fetch
     type: derived_from
