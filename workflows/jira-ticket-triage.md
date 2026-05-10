@@ -38,15 +38,27 @@ execution:
     - skill: "priority-triage"
       step_type: "synthesis"
       prompt: "triage-priorities"
+      context:
+        voice_profile: ""
+        triage_strictness: ""
     - skill: "workload-analysis"
       step_type: "synthesis"
       prompt: "analyse-workload"
+      context:
+        voice_profile: ""
   - skill: "triage-synthesis"
     step_type: "synthesis"
     prompt: "synthesise-triage"
+    context:
+      voice_profile: ""
+      audience_profile: ""
+      report_depth: ""
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-triage"
+    context:
+      voice_profile: ""
+      grammar_strictness: ""
 ---
 
 ## Overview
