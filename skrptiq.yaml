@@ -3,7 +3,7 @@ id: "069d2091-1da3-45cd-9938-f781bd8655d4"
 name: "jira-ticket-triage"
 display_name: "Jira Ticket Triage"
 description: "Pulls Jira tickets via MCP, categorises by status and priority, and generates a triage report or sprint summary"
-version: "1.0.1"
+version: "1.0.2"
 engine: ">=1.0.0"
 
 # --- Attribution ---
