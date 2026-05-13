@@ -39,26 +39,26 @@ execution:
       step_type: "synthesis"
       prompt: "triage-priorities"
       context:
-        voice_profile: ""
-        triage_strictness: ""
+        voice_profile: "Neutral professional tone"
+        triage_strictness: "Standard"
     - skill: "workload-analysis"
       step_type: "synthesis"
       prompt: "analyse-workload"
       context:
-        voice_profile: ""
+        voice_profile: "Neutral professional tone"
   - skill: "triage-synthesis"
     step_type: "synthesis"
     prompt: "synthesise-triage"
     context:
-      voice_profile: ""
-      audience_profile: ""
-      report_depth: ""
+      voice_profile: "Neutral professional tone"
+      audience_profile: "General professional audience"
+      report_depth: "Standard"
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-triage"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
 ---
 
 ## Overview
