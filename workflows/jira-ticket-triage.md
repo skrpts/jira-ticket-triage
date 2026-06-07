@@ -5,7 +5,7 @@ title: Jira Ticket Triage
 description: "Fetches Jira tickets via MCP, runs priority triage and workload analysis, and generates an actionable triage report"
 tags: [Production, Project Management]
 connections:
-  - target: ticket-fetch
+  - target: fetch-jira-tickets
     type: uses
   - target: priority-triage
     type: uses
@@ -25,13 +25,13 @@ metadata:
   trigger: manual
 output_step: "language-polish"
 composite_steps:
-  - "ticket-fetch"
+  - "fetch-jira-tickets"
   - "priority-triage"
   - "workload-analysis"
   - "triage-synthesis"
   - "language-polish"
 execution:
-  - skill: "ticket-fetch"
+  - skill: "fetch-jira-tickets"
     step_type: "generation"
     prompt: "fetch-jira-tickets"
   - parallel:
