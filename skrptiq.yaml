@@ -1,9 +1,9 @@
 # --- Identity ---
-id: "069d2091-1da3-45cd-9938-f781bd8655d4"
+id: "87b76f93-b5f6-4482-8623-bd3771ba98ab"
 name: "jira-ticket-triage"
 display_name: "Jira Ticket Triage"
 description: "Pulls Jira tickets via MCP, categorises by status and priority, and generates a triage report or sprint summary"
-version: "1.0.12"
+version: "1.0.13"
 engine: ">=0.1.0"
 
 # --- Attribution ---
