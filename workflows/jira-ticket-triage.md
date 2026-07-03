@@ -34,21 +34,25 @@ execution:
   - skill: "fetch-jira-tickets"
     step_type: "generation"
     prompt: "fetch-jira-tickets"
+    output: { name: "tickets", type: "text" }
   - parallel:
     - skill: "priority-triage"
       step_type: "synthesis"
       prompt: "triage-priorities"
+      output: { name: "priorities", type: "text" }
       context:
         voice_profile: "Neutral professional tone"
         triage_strictness: "Standard"
     - skill: "workload-analysis"
       step_type: "synthesis"
       prompt: "analyse-workload"
+      output: { name: "workload", type: "text" }
       context:
         voice_profile: "Neutral professional tone"
   - skill: "triage-synthesis"
     step_type: "synthesis"
     prompt: "synthesise-triage"
+    output: { name: "triage_report", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       audience_profile: "General professional audience"
@@ -56,6 +60,7 @@ execution:
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-triage"
+    output: { name: "polished_triage", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"

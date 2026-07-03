@@ -1,5 +1,11 @@
 # Release Notes
 
+## v1.0.15
+GH#745 — declare per-step `output: {name, type}` on every execution step (tickets/text, priorities/text, workload/text, triage_report/text, polished_triage/text). Lights up the #744 rich flow-map. Content-only. (Completes the #745 sweep for this skrpt after the #754 error fix.)
+
+## v1.0.14
+GH#754 — restore the local `fetch-jira-tickets` prompt dropped by the GH#645 K-037 migration (the exec’s `prompt: fetch-jira-tickets` was resolving to the shared *skill* → `execution_prompt_wrong_type` ERROR). Reconcile the restored prompt’s connection target. Canonical scan clean.
+
 ## v1.0.13
 Fix-forward after Row 3b v1.0.12 publish failure. The v1.0.12 per-skrpt CI's "Register version with Hub API" step failed because the consumer's source `manifest.id` (069d2091…) did not match the D1 catalogue row's id (87b76f93…) — a legacy drift from before Action 6 (`0bcc5ae0`) made publish-skrpt.mjs Step 2 INSERT use `manifest.id` for the D1 id column. v1.0.13 reconciles the source `manifest.id` to the catalogue authoritative value (Row-5-equivalent for consumers) and republishes. Per Adj-1: no re-tag of v1.0.12; the orphaned GitHub release artefact stays inert (no D1 versions row, no consumer pinned it).
 

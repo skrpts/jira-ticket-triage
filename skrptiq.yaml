@@ -3,7 +3,7 @@ id: "87b76f93-b5f6-4482-8623-bd3771ba98ab"
 name: "jira-ticket-triage"
 display_name: "Jira Ticket Triage"
 description: "Pulls Jira tickets via MCP, categorises by status and priority, and generates a triage report or sprint summary"
-version: "1.0.13"
+version: "1.0.15"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -50,10 +50,24 @@ requires:
 # --- Contents ---
 contents:
   skills: 3
-  prompts: 4
+  prompts: 5
   workflows: 1
   services: 1
   sources: 0
   documents: 0
   assets: 0
-  total: 9
+  total: 10
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:03:03.543Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: ["network:id.atlassian.com"]
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/jira-ticket-triage/security"
