@@ -1,8 +1,8 @@
 ---
 type: prompt
 id: analyse-workload
-title: Analyse Workload
-description: "Analyses ticket distribution across team members"
+title: Analyze Workload
+description: "Analyzes ticket distribution across team members"
 tags: [Production, Project Management]
 connections:
   - target: workload-analysis
@@ -14,7 +14,7 @@ metadata:
 
 ## Purpose
 
-Analyses how tickets are distributed across assignees to identify overload, gaps, and rebalancing opportunities.
+Analyzes how tickets are distributed across assignees to identify overload, gaps, and rebalancing opportunities.
 
 ## Voice Profile
 
@@ -24,7 +24,7 @@ If a voice profile is provided above, write workload summaries in that voice.
 
 ## Prompt
 
-You are a workload analysis agent. Analyse the ticket distribution below.
+You are a workload analysis agent. Analyze the ticket distribution below.
 
 ### What to Compute
 

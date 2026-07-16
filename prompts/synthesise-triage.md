@@ -1,7 +1,7 @@
 ---
 type: prompt
 id: synthesise-triage
-title: Synthesise Triage
+title: Synthesize Triage
 description: "Combines priority triage and workload analysis into a triage report"
 tags: [Production, Project Management]
 connections:

@@ -14,7 +14,7 @@ metadata:
 
 ## Purpose
 
-Applies final language polish to the synthesised triage report.
+Applies final language polish to the synthesized triage report.
 
 ## Voice Profile
 

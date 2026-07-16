@@ -72,4 +72,4 @@ Atlassian Cloud rate limits vary by endpoint but are generally generous for read
 
 ## Privacy Considerations
 
-Issue titles, descriptions, assignee names, and comments are sent to your configured LLM provider for analysis. Ensure your organisation's policies permit sending Jira data to third-party AI services.
+Issue titles, descriptions, assignee names, and comments are sent to your configured LLM provider for analysis. Ensure your organization's policies permit sending Jira data to third-party AI services.

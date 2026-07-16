@@ -68,7 +68,7 @@ execution:
 
 ## Overview
 
-This workflow produces an actionable triage report from your Jira board. It fetches tickets matching your criteria (sprint, project, or custom JQL), runs two parallel analysis passes (priority triage and workload analysis), synthesises the results into a report, and applies a final language polish.
+This workflow produces an actionable triage report from your Jira board. It fetches tickets matching your criteria (sprint, project, or custom JQL), runs two parallel analysis passes (priority triage and workload analysis), synthesizes the results into a report, and applies a final language polish.
 
 The triage goes beyond Jira's built-in views — it considers staleness, blocker chains, workload imbalances, and recommends specific actions (escalate, schedule, defer, close) for each ticket.
 
@@ -92,7 +92,7 @@ Assesses each ticket's urgency considering priority, age, status, blockers, and 
 
 #### 2b. Workload Analysis
 
-Analyses ticket distribution across team members. Flags overloaded individuals, unassigned critical items, blocker chains, and single points of failure. Suggests rebalancing actions.
+Analyzes ticket distribution across team members. Flags overloaded individuals, unassigned critical items, blocker chains, and single points of failure. Suggests rebalancing actions.
 
 ### Stage 3: Triage Synthesis
 

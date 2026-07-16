@@ -14,7 +14,7 @@ metadata:
 
 ## Purpose
 
-Analyses each ticket's priority, age, status, and context to recommend a triage action.
+Analyzes each ticket's priority, age, status, and context to recommend a triage action.
 
 ## Voice Profile
 

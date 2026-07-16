@@ -2,7 +2,7 @@
 type: skill
 id: workload-analysis
 title: Workload Analysis
-description: "Analyses ticket distribution across assignees — identifies overload, gaps, and imbalances"
+description: "Analyzes ticket distribution across assignees — identifies overload, gaps, and imbalances"
 tags: [Production, Project Management]
 connections:
   - target: llm-service
@@ -16,7 +16,7 @@ context_params:
 
 ## Capability
 
-Analyses how tickets are distributed across team members. Identifies who is overloaded, who has capacity, and where work is unevenly distributed.
+Analyzes how tickets are distributed across team members. Identifies who is overloaded, who has capacity, and where work is unevenly distributed.
 
 ## When to Use
 

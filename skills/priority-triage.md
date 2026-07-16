@@ -21,7 +21,7 @@ context_params:
 
 ## Capability
 
-Analyses each ticket's priority, age, status, and context to recommend a triage action. Goes beyond Jira's priority field — considers staleness, blocker chains, and business impact.
+Analyzes each ticket's priority, age, status, and context to recommend a triage action. Goes beyond Jira's priority field — considers staleness, blocker chains, and business impact.
 
 ## When to Use
 
